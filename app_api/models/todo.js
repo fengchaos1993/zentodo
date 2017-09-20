@@ -12,7 +12,7 @@ var todoSchema = new mongosoose.Schema({
 
 var userSchema = new mongosoose.Schema({
     username: {type: String, required: true },
-    token: { type: String, required: true },
+    token: { type: String },
     displayPicture: Buffer,
     todos: [todoSchema]
 });
