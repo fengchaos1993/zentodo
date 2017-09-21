@@ -73,8 +73,7 @@ module.exports.createUser = function (req, res) {
                 token: req.body.token,
                 displayPicture: req.body.displayPicture,
                 todos: []
-            })
-            .exec(function (err, user) {
+            }, function (err, user) {
                 if (err) {
                     console.log(err, req);
                     sendJsonResponse(res, 500, err);

@@ -133,8 +133,8 @@ module.exports.updateTodoItem = function (req, res) {
                         if ("payload" in req.body) {
                             todoItem.payload = req.body.payload;
                         }
-                        if ("creationTimestartTime" in req.body) {
-                            todoItem.creationTimestartTime = req.body.creationTimestartTime;
+                        if ("creationTime" in req.body) {
+                            todoItem.creationTime = req.body.creationTime;
                         }
                         if ("startTime" in req.body) {
                             todoItem.startTime = req.body.startTime;
